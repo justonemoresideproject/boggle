@@ -1,0 +1,24 @@
+table {
+    border: solid 1px black;
+    font-size: large;
+    margin-top: 1rem;
+}
+
+.boggleLetter {
+    font-size: 20px;
+}
+
+tr, td {
+    border: solid 1px black;
+    width: 80px
+}
+
+#answer {
+    padding-right: 80px;
+    margin-right: 80px;
+    width: 100px;
+}
+
+form {
+    padding-top: 1rem;
+}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %} Start {% endblock %}
+
+{% block content %}
+
+<h1>Welcome to Boggle!</h1>
+
+<h3>The goal of the game is to get the highest point total by matching letters together to form a word.</h3>
+<h3>When ready, click the button below to start. Feel free to change the size of the board.</h3>
+
+<form action="/display">
+    <label for="">Board Size (5x5, 6x6, etc.):</label>
+    <select name="size" id="">
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <label for="">Amount of time in seconds</label>
+    <select name="time" id="">
+        <option value="30">30</option>
+        <option value="60">60</option>
+        <option value="90">90</option>
+        <option value="120">120</option>
+    </select>
+    <button>Start</button>    
+</form>
+
+{% endblock %}
